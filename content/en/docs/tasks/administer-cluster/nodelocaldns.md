@@ -10,7 +10,12 @@ content_template: templates/task
 This page provides an overview of NodeLocal DNSCache feature in Kubernetes.
 {{% /capture %}}
 
-{{% capture body %}}
+{{% capture prerequisites %}}
+
+{{< include "task-tutorial-prereqs.md" >}} {{< version-check >}}
+{{% /capture %}}
+
+{{% capture steps %}}
 
 ## Introduction
 
@@ -58,3 +63,5 @@ The addon can be applied using the yaml specified above in any k8s version. The 
 | :---------: |:-----------:|
 | 1.15 | Beta(Not enabled by default) |
 | 1.13 | Alpha(Not enabled by default) |
+
+{{% /capture %}}
